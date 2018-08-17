@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.icons525.Icons525View?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#Online" prefHeight="388.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.pad.client.ClientHomeController">
+    <children>
+        <JFXTextField fx:id="txtfriend" layoutX="67.0" layoutY="134.0" prefHeight="25.0" prefWidth="171.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton buttonType="RAISED" layoutX="243.0" layoutY="139.0" onAction="#Search" ripplerFill="BLACK" text="Search">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="458.0" layoutY="36.0" onAction="#Online" prefHeight="30.0" prefWidth="89.0" ripplerFill="#2843c6" text="    Online" textFill="#479397" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Icons525View glyphName="CONTACTS" layoutX="466.0" layoutY="60.0" size="20" text="" />
+      <JFXButton layoutX="407.0" layoutY="66.0" onAction="#FriendReq" prefHeight="30.0" prefWidth="142.0" ripplerFill="#59c6c4" text="   Friend Requests" textFill="#479397">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="USERS" layoutX="405.0" layoutY="87.0" size="18" text="" />
+      <JFXButton buttonType="RAISED" layoutX="397.0" layoutY="96.0" onAction="#ChangePass" prefHeight="30.0" prefWidth="153.0" ripplerFill="#e8e23d" text="    Change Password" textFill="#479397">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <MaterialDesignIconView glyphName="ACCOUNT_KEY" layoutX="395.0" layoutY="118.0" size="20" text="" />
+        <JFXButton buttonType="RAISED" onAction="#Logout" prefHeight="30.0" prefWidth="89.0" ripplerFill="#7ad3ff" text="Logout" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </JFXButton>
+        <Icons525View glyphName="SHUT_DOWN" size="15" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="8.0" />
+        <Label layoutX="222.0" layoutY="1.0" text="Client Home" AnchorPane.leftAnchor="222.5" AnchorPane.rightAnchor="222.5">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="Friendable" editable="true" focusTraversable="false" layoutX="8.0" layoutY="198.0" prefHeight="200.0" prefWidth="519.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0">
+            <columns>
+                <TableColumn fx:id="Name" prefWidth="120.0" text="Username" />
+                <TableColumn fx:id="Emailid" prefWidth="243.0" text="Email Id" />
+                <TableColumn fx:id="Status" minWidth="8.0" prefWidth="155.0" text="Status" />
+            </columns>
+        </TableView>
+      <Label fx:id="UserHello" layoutX="45.0" layoutY="37.0" prefHeight="27.0" prefWidth="142.0" textFill="#389085" AnchorPane.topAnchor="37.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="44.0" text="Hello," AnchorPane.topAnchor="44.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutY="30.0" prefHeight="11.0" prefWidth="554.0" AnchorPane.bottomAnchor="376.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+    </children>
+</AnchorPane>

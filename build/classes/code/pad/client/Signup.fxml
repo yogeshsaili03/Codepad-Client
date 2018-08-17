@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.pad.client.SignupController">
+   <children>
+      <Label layoutX="195.0" layoutY="14.0" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="74.0" prefHeight="17.0" prefWidth="94.0" text="Username">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="122.0" prefHeight="17.0" prefWidth="94.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="178.0" text="Confirm Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="228.0" prefHeight="17.0" prefWidth="94.0" text="Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="278.0" text="Mobile No.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="331.0" prefHeight="17.0" prefWidth="94.0" text="Email id">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="423.0" prefHeight="18.0" prefWidth="135.0" text="Already Registered???" textAlignment="CENTER" textFill="#3547cd" underline="true" />
+      <JFXTextField fx:id="username" layoutX="166.0" layoutY="72.0" prefHeight="25.0" prefWidth="248.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="password" layoutX="166.0" layoutY="120.0" prefHeight="28.0" prefWidth="248.0" AnchorPane.bottomAnchor="306.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXPasswordField>
+      <JFXTextField fx:id="show" layoutX="167.0" layoutY="121.0" prefHeight="25.0" prefWidth="248.0" AnchorPane.bottomAnchor="306.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="repassword" layoutX="166.0" layoutY="175.0" prefHeight="25.0" prefWidth="248.0" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXPasswordField>
+      <JFXTextField fx:id="reshow" layoutX="167.0" layoutY="176.0" prefHeight="25.0" prefWidth="248.0" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="166.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="name" layoutX="166.0" layoutY="224.0" prefHeight="28.0" prefWidth="248.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="mobile" layoutX="167.0" layoutY="286.0" prefHeight="25.0" prefWidth="248.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      
+      <JFXTextField fx:id="emailid" layoutX="166.0" layoutY="327.0" prefHeight="28.0" prefWidth="248.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="86.0" layoutY="393.0" onAction="#checkdetails" ripplerFill="#2ec0ff" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="234.0" layoutY="393.0" onAction="#makeLogin" ripplerFill="#3ec345" text="Login">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView glyphName="EYE" layoutX="396.0" layoutY="138.0" onMousePressed="#Showpass" onMouseReleased="#Hidepass" size="18" />
+      <FontAwesomeIconView glyphName="EYE" layoutX="396.0" layoutY="194.0" onMousePressed="#SHowrepass" onMouseReleased="#Hiderepass" size="18" />
+      
+         
+     
+   </children>
+</AnchorPane>

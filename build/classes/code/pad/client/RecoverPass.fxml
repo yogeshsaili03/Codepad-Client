@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="241.0" prefWidth="282.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="code.pad.client.RecoverPassController">
+   <children>
+      <Label layoutX="64.0" text="Recover Password" textFill="#4cd2e4" AnchorPane.leftAnchor="64.5" AnchorPane.rightAnchor="64.5" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Banner" layoutX="25.0" layoutY="42.0" prefHeight="14.0" prefWidth="282.0" textFill="#45b559" underline="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font name="Sitka Display" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="OneTP" focusColor="#2baea1" labelFloat="true" layoutX="25.0" layoutY="96.0" prefHeight="25.0" prefWidth="212.0" promptText="OTP" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="164.0" onAction="#Submit" ripplerFill="#00ff11" text="Submit" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="48.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="172.0" layoutY="164.0" onAction="#Cancel" ripplerFill="RED" text="Cancel" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="48.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="error" layoutX="91.0" layoutY="63.0" prefHeight="17.0" prefWidth="100.0" text="OTP not matched..." textFill="#ff3333" underline="true" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="91.0">
+         <font>
+            <Font name="Sitka Display Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

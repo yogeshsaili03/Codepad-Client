@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Code Pad Client.jnlp">
+  <information>
+    <title>Code Pad Client</title>
+    <vendor>Yogesh</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.security.policy=applet.policy "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
+    <jar href="lib\fontawesomefx-fontawesome-4.7.0-5.jar" size="136891" download="eager" />
+    <jar href="lib\fontawesomefx-icons525-3.0.0-4.jar" size="110545" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2375703" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Code Pad Client" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="code.pad.client.CodePadClient"  name="Code Pad Client" />
+  <update check="always"/>
+</jnlp>
